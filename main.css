@@ -1,0 +1,156 @@
+body {
+  background-image: url(./assets/images/picture-1.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: #2d3436;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.board-game {
+  width: 300px;
+  margin: 0 100px;
+}
+
+.end-game {
+  position: absolute;
+  top: 200px;
+  left: 160px;
+  color: #eb2f06;
+  display: none;
+}
+.end-name {
+  font-size: 50px;
+}
+
+
+h3 {
+  margin: 0 0;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid #57606f;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+
+.mini-grid {
+  margin-left: 70px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #57606f;
+}
+
+.mini-grid div {
+  width: 30px;
+  height: 30px;
+}
+
+#start-button {
+  display: block;
+  margin-top: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+#start-button:hover {
+  color: #273c75;
+  cursor: pointer;
+}
+
+.level-title {
+  margin-right: 50px;
+}
+
+:root {
+  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1px;
+  color: #2d3436;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+  border: 2px solid #57606f;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 30px;
+  border-radius: .25em;
+  overflow: hidden;
+
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px 10px 10px;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+/* Other styles*/
+.m-b {
+  margin-bottom: 10px;
+}
+
+.box {
+  display: flex;
+}
